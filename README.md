@@ -32,10 +32,12 @@ You can also have multiple windows under an element from an array
 ``` 
 ### Parameters
 * _title_: Window title
-* _close_: Function executed when window is closed
-* _maximize_: Function executed when window is maximized
-* _restore_: Function executed when a window is restored
+* _close_: Function executed when window is closed.
+* _maximize_: Function executed when window is maximized.
+* _restore_: Function executed when a window is restored.
 * _options_: Additional options to customize the window, see below. 
+* _maximizable_: Boolean to determine if window can be maximized. (it must be set from $scope variable)
+* _closeable_: Boolean to determine if window can be closed. (it must be set from $scope variable)
 
 ### Options 
 You can pass some options to a window to customize the behaviour:
