@@ -46,6 +46,7 @@ You can pass some options to a window to customize the behaviour:
  * _size_ {width, height}: Initial size of the window when it's created
  * _maximizeTo_: Element id where the windows will be maximized (when user push the button) 
  * _windowContainer_: Element id where windows can move over. If not provided parent element would be the windowContainer.
+ * _initialZIndex_: You can specify if your window starts on a specified z index
 
 Options example:
 
