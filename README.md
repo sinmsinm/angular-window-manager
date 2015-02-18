@@ -32,6 +32,7 @@ You can also have multiple windows under an element from an array
 ``` 
 ### Parameters
 * _title_: Window title
+* _open_: Function executed when window is opened.
 * _close_: Function executed when window is closed.
 * _maximize_: Function executed when window is maximized.
 * _restore_: Function executed when a window is restored.
@@ -56,4 +57,19 @@ $scope.options = {
 		windowContainer: 'myMoveZone'
 	};
 ```
+## Executing actions
 
+When you define an action from list above to be executed, you must receive with a parameter windowHandler. 
+``` 
+	 <wmwindow title="Good title" open="onopen" ...>
+```
+
+```
+$scope.onopen = function (win){
+	
+	//When the window is open then move to position 100 100
+	win.windowHandler.move (100,100);
+	...
+};
+```
+As you see you can use the `windowHandler` object of the window to execute the actions and access to the window's elements.
